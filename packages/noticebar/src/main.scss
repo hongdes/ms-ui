@@ -1,0 +1,68 @@
+.ms-noticebar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 24px;
+  .wrap {
+    position: relative;
+    flex: 1;
+    height: 24px;
+    overflow: hidden;
+  }
+  .content {
+    position: absolute;
+    white-space: nowrap;
+    &.play-infinite {
+      animation: ms-notice-bar-play-infinite linear infinite both running;
+    }
+    &.play {
+      animation: ms-notice-bar-play linear both running;
+    }
+    &.play-vertical {
+      animation: ms-notice-bar-play-vertical linear infinite both running;
+    }
+  }
+}
+@-webkit-keyframes ms-notice-bar-play-infinite {
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+            transform: translate3d(-100%,0,0);
+  }
+}
+
+@keyframes ms-notice-bar-play-infinite {
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+            transform: translate3d(-100%,0,0);
+  }
+}
+
+@-webkit-keyframes ms-notice-bar-play {
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+            transform: translate3d(-100%,0,0);
+  }
+}
+
+@keyframes ms-notice-bar-play {
+  to {
+    -webkit-transform: translate3d(-100%,0,0);
+            transform: translate3d(-100%,0,0);
+  }
+}
+
+@keyframes ms-notice-bar-play {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+// 垂直方向的滚动
+@keyframes ms-notice-bar-play-vertical {
+  to {
+    transform: translateY(40px);
+  }
+}

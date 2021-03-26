@@ -1,0 +1,31 @@
+.ms-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 73%;
+  transform: translate(-50%, -50%);
+  .ms-toast__body {
+    width: 100%;
+    padding: 20px 0 22px 0;
+    text-align: center;
+    text-align: center;
+    background: rgba(40, 39, 42, .8);
+    border-radius: 42px;
+    .ms-toast__content {
+      font-size: 30px;
+      line-height: 42px;
+      color: #fff;
+    }
+  }
+}
+.toast-fade-in {
+  animation: toast-fade-in .3s;
+}
+@keyframes toast-fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+html,
+body,
+div,
+p,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+  list-style: none;
+  background: transparent;
+  border: 0;
+  outline: 0;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+details,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+legend,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+a,
+a:active,
+a:hover {
+  outline: none;
+}
+a {
+  text-decoration: none;
+}
+
+blockquote,
+p {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+input {
+  outline: none;
+}
+
+img,
+button {
+  background: none;
+  border: none; //自定义边框
+  outline: none;
+}
+
+/* 记住定义重点风格! */
+:focus {
+  outline: 0;
+}
+
+/* 记住因何故插入 */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* 表还需要“单元格间距= " 0 "”的标记 */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  // background: #fff;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+  "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+// input,
+// button {
+//   font-family: "Microsoft Yahei", "宋体", sans-serif;
+// }
+
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+}
+
+.clearfix:after {
+  display: block;
+  height: 0;
+  clear: both;
+  font-size: 0;
+  visibility: hidden;
+  content: " ";
+}
+
+/*这一句是用来解决在安卓上的点击出现篮框问题*/
+body {
+  position: relative;
+  background-color: #fbf9fe;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*下面是解决ios上去除微信点击蓝色边框 */
+a:focus,
+input:focus,
+p:focus,
+div:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,55 @@
+.ms-mask,
+.ms-dialog-box {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, .4);
+}
+.ms-dialog-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ms-dialog {
+  position: relative;
+  // display: flex;
+  width: 86%;
+  max-height: 70vh;
+  background-color: #fff;
+  border-radius: 8px;
+  .ms-dialog-body {
+    padding: 30px 20px 20px;
+    overflow: auto;
+    .ms-dialog-title {
+      padding-bottom: 8px;
+      font-size: 36px;
+      color: #28272a;
+      text-align: center;
+    }
+  }
+}
+.ms-dialog-footer {
+  display: flex;
+  margin: 48px;
+  .ms-dialog-btn {
+    flex: 0 0 50%;
+    height: 64px;
+    font-size: 32px;
+    border-radius: 64px;
+    &:nth-child(1) {
+      margin-right: 40px;
+    }
+    &.btn1 {
+      color: #58abf6;
+      border: 2px solid #58abf6;
+    }
+    &.btn2 {
+      color: #fff;
+      background: #58abf6;
+    }
+  }
+}
