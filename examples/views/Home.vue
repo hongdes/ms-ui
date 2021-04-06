@@ -69,6 +69,13 @@ export default {
   .home-page {
     padding-bottom: 20px;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
   }
   .ms-header {
     position: absolute;
@@ -98,7 +105,10 @@ export default {
     }
   }
   .container-home {
-    margin-top: 46PX;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 46PX;
+    // padding-bottom: 55PX;
   }
   .ms-footer {
     position: absolute;

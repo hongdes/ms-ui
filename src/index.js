@@ -7,6 +7,8 @@ import Noticebar from '../packages/noticebar';
 import Numberkeyboard from '../packages/numberkeyboard';
 import Luckdraw from '../packages/luckdraw';
 import Actionsheet from '../packages/action-sheet';
+import Tab from '../packages/tab';
+import TabItem from '../packages/tab-item';
 
 const install = function(Vue, config = {}) {
   if (install.installed) return;
@@ -18,6 +20,8 @@ const install = function(Vue, config = {}) {
   Vue.component(Numberkeyboard.name, Numberkeyboard);
   Vue.component(Luckdraw.name, Luckdraw);
   Vue.component(Actionsheet.name, Actionsheet);
+  Vue.component(Tab.name, Tab);
+  Vue.component(TabItem.name, TabItem);
   Vue.prototype.$toast = Toast;
   
 
@@ -37,5 +41,7 @@ export {
   Numberkeyboard,
   Luckdraw,
   Actionsheet,
+  Tab,
+  TabItem,
   Toast,
 };

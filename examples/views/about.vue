@@ -17,7 +17,7 @@
               <i class="ms-iconfont ms-iconaright"></i>
             </div>
           </div>
-          <div class="ms-tap-active">
+          <a class="ms-tap-active" href="https://github.com/hongdes/ms-ui" target="_blank">
             <div class="demo-icon" style="color: rgb(53, 73, 94);">
               <i class="ms-iconfont ms-icongithub"></i>
             </div>
@@ -28,7 +28,7 @@
               <span>Star me</span>
               <i class="ms-iconfont ms-iconaright"></i>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <br />

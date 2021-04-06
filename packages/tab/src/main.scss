@@ -1,0 +1,51 @@
+.ms-tab-wrap {
+  position: relative;
+  padding-top: 88px;
+  .ms-tab-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 88px;
+    overflow: hidden;
+    .ms-tab {
+      position: relative;
+      display: flex;
+      height: 88px;
+      background-color: #fff;
+    }
+  }
+}
+.ms-tab-ink-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  text-align: center;
+  background-color: #f90;
+  &-transition-forward {
+    transition: right .3s cubic-bezier(.35, 0, .25, 1) .09s, left .3s cubic-bezier(.35, 0, .25, 1);
+  }
+  &-transition-backward {
+    transition: right .3s cubic-bezier(.35, 0, .25, 1) .09s,
+    left .3s cubic-bezier(.35, 0, .25, 1);
+  }
+}
+
+.scrollable {
+  box-sizing: content-box;
+  padding-bottom: 17px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+.scrollable .ms-tab-ink-bar {
+  position: absolute;
+  bottom: 17px;
+}
+.scrollable .ms-tab-item {
+  flex: 0 0 22%;
+}
